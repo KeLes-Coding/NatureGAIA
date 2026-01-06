@@ -1,1 +1,1 @@
-# NatureGAIA
+# NatureGAIA: A Verifiable Benchmark and Hierarchical Framework for Long-Horizon GUI Tasks
