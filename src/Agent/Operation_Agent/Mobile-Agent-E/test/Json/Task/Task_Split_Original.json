@@ -1,0 +1,43 @@
+{
+  "Task": "使用wiki百科搜索周杰伦，告诉我他在2000年发布了哪张专辑？搜索这张专辑，告诉我这张专辑中包含了哪些曲目？使用APPLE Music搜索查看专辑的第一首歌的作词人是谁？在网易云音乐APP中搜索这位作词人，打开其主页，告诉我他是哪一年出生的？使用Google搜索这一年的4月4日是哪一家美国科技公司成立？使用 Google Map 搜索这家公司的中国总部位于那一个城市？",
+  "atomic_tasks_numbers": 6,
+  "atomic_tasks": [
+    {
+      "atomic_tasks_ID": 1,
+      "atomic_tasks_description": "使用维基百科搜索周杰伦，并找出他在2000年发布的专辑名称。",
+      "atomic_tasks_answer": "",
+      "atomic_tasks_status": ""
+    },
+    {
+      "atomic_tasks_ID": 2,
+      "atomic_tasks_description": "基于上一步找到的专辑名称，在维基百科上进一步查找该专辑包含的所有曲目列表。",
+      "atomic_tasks_answer": "",
+      "atomic_tasks_status": ""
+    },
+    {
+      "atomic_tasks_ID": 3,
+      "atomic_tasks_description": "利用APPLE Music查询第一步提到的专辑里第一首歌曲的作词者名字。",
+      "atomic_tasks_answer": "",
+      "atomic_tasks_status": ""
+    },
+    {
+      "atomic_tasks_ID": 4,
+      "atomic_tasks_description": "通过网易云音乐应用搜索第三步得到的作词者姓名，访问其个人主页以确定此人的出生年份。",
+      "atomic_tasks_answer": "",
+      "atomic_tasks_status": ""
+    },
+    {
+      "atomic_tasks_ID": 5,
+      "atomic_tasks_description": "运用Google搜索引擎查证第四步获取到的出生年份里4月4日成立的一家美国科技公司的信息。",
+      "atomic_tasks_answer": "",
+      "atomic_tasks_status": ""
+    },
+    {
+      "atomic_tasks_ID": 6,
+      "atomic_tasks_description": "最后，借助Google Maps定位第五步识别出的美国科技公司在华的主要办公地点所在城市。",
+      "atomic_tasks_answer": "",
+      "atomic_tasks_status": ""
+    }
+  ],
+  "final_answer": ""
+}

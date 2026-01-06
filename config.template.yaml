@@ -1,0 +1,223 @@
+# ============================================================
+# LightManus 统一配置文件
+# ============================================================
+# 此配置文件整合了所有组件的配置，包括：
+# - LightManus 主框架 (任务分解、执行、验证)
+# - Jarvis Agent (Android 设备控制)
+# - Mobile-Agent-E (移动端 Agent)
+# - PC-Agent (桌面端 Agent)
+
+# ============================================================
+# 全局配置
+# ============================================================
+global:
+  # 全局代理设置 (可选)
+  proxy:
+    enabled: false
+    server: "http://127.0.0.1:7890"
+
+  # 日志配置
+  logging:
+    level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+    format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+# ============================================================
+# LightManus 框架配置
+# ============================================================
+lightmanus:
+  # 任务加载器配置
+  task_loader:
+    # 任务数据 JSON 文件路径
+    json_path: "task/0101.json"
+
+  # 任务分解 Agent 配置
+  task_decomposer:
+    # LLM API 配置
+    api_url: "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
+    api_key: ""  # 填入你的 API Key
+    model: "qwen-vl-max"
+    # 代理设置 (如果与全局不同)
+    proxy: null  # 或指定具体的代理地址
+
+  # 任务执行 Agent 配置
+  task_executor:
+    # LLM API 配置
+    api_url: "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
+    api_key: ""  # 填入你的 API Key
+    model: "qwen-vl-max"
+    # 代理设置 (如果与全局不同)
+    proxy: null
+
+  # 答案验证 Agent 配置
+  answer_validator:
+    # LLM API 配置
+    api_url: "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
+    api_key: ""  # 填入你的 API Key
+    model: "deepseek-v3"  # 推荐使用推理模型
+    # 代理设置 (如果与全局不同)
+    proxy: null
+
+# ============================================================
+# Jarvis Agent 配置 (Android 设备控制)
+# ============================================================
+jarvis:
+  # 是否启用 Jarvis Agent
+  enabled: true
+
+  # 安卓调试桥 (ADB) 配置
+  adb:
+    executable_path: "adb"  # ADB 可执行文件路径，或使用绝对路径
+
+  # 设备提供者配置
+  # Jarvis 支持多种设备连接方式
+  device_providers:
+    # 本机设备 (USB 连接)
+    local:
+      enabled: true
+
+    # 远程 IP 设备 (网络 ADB)
+    remote_ip:
+      enabled: false
+      remotes:
+        - host: ""  # 格式: "IP:PORT"，例如 "192.168.1.100:5555"
+        # - host: "192.168.1.101:5555"
+
+    # SSH 反向隧道设备
+    ssh_reverse_tunnel:
+      enabled: false
+      ssh_reverse_tunnels:
+        - local_port: 5038  # 本地映射端口
+        # - local_port: 5039
+
+    # SSH 正向隧道设备
+    ssh_forward_tunnel:
+      enabled: false
+      ssh_connections:
+        - ssh_user: ""
+          ssh_host: ""
+          ssh_port: 22
+          remote_adb_path: ""  # 服务器上的 adb 绝对路径，例如 "/usr/bin/adb"
+          local_start_port: 15555  # 本地起始端口
+
+  # Agent 行为配置
+  agent:
+    # 最大执行步数
+    max_steps: 15
+
+    # 错误重试配置
+    retry_on_error:
+      enabled: true
+      attempts: 3
+
+    # 图片压缩配置
+    image_compression:
+      enabled: true
+      scale_factor: 0.5  # 0.5 表示缩放到 50%
+
+  # LLM 配置 (用于 Jarvis 的思考和决策)
+  llm:
+    # API 模式: openai, gemini, claude
+    api_mode: "openai"
+
+    providers:
+      # OpenAI 兼容接口 (推荐: 阿里云通义千问)
+      openai:
+        base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+        api_key: ""  # 填入你的 API Key
+        model: "qwen-vl-max"  # 或 "qwen3-coder-plus"
+        timeout: 120
+        is_vlm: true  # 必须使用视觉语言模型
+
+      # Google Gemini
+      gemini:
+        api_key: ""
+        model: "gemini-1.5-pro-latest"
+        timeout: 120
+        is_vlm: true
+
+      # Anthropic Claude
+      claude:
+        api_key: ""
+        model: "claude-3-opus-20240229"
+        timeout: 120
+        is_vlm: true
+
+# ============================================================
+# Mobile-Agent-E 配置
+# ============================================================
+mobile_agent_e:
+  enabled: false
+
+  # 基础路径配置
+  base_path: "src/Agent/Operation_Agent/Mobile-Agent-E"
+
+  # 模型配置
+  model:
+    api_url: "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
+    api_key: ""
+    model_name: "qwen-vl-max"
+
+  # 设备配置
+  device:
+    # ADB 路径
+    adb_path: "adb"
+    # 设备序列号 (可选，默认使用第一个可用设备)
+    serial: null
+
+  # 执行配置
+  execution:
+    max_steps: 15
+    timeout: 600
+
+# ============================================================
+# PC-Agent 配置
+# ============================================================
+pc_agent:
+  enabled: false
+
+  # 基础路径配置
+  base_path: "src/Agent/Operation_Agent/PC-Agent"
+
+  # 模型配置
+  model:
+    api_url: "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
+    api_key: ""
+    model_name: "qwen-vl-max"
+
+  # 执行配置
+  execution:
+    max_steps: 15
+    timeout: 600
+
+  # OCR 配置
+  ocr:
+    enabled: true
+    model_path: "src/Agent/Operation_Agent/PC-Agent/OpenOCR"
+
+# ============================================================
+# 使用说明
+# ============================================================
+#
+# 1. 快速开始:
+#    - 填写上述配置中的 API Key
+#    - 确保设备已连接 (adb devices 检查)
+#    - 运行: python run_light_manus.py
+#
+# 2. 选择启用的 Agent:
+#    - jarvis.enabled: true/false
+#    - mobile_agent_e.enabled: true/false
+#    - pc_agent.enabled: true/false
+#
+# 3. 代理配置:
+#    - 全局代理: global.proxy
+#    - 各组件独立代理: 可在每个组件下配置 proxy 字段覆盖全局设置
+#
+# 4. 模型选择:
+#    - 推荐使用视觉语言模型 (VLM): qwen-vl-max, gemini-1.5-pro, claude-3-opus
+#    - 答案验证可使用推理模型: deepseek-v3, deepseek-r1
+#
+# 5. 设备配置:
+#    - Jarvis 支持 USB/网络 ADB、SSH 隧道等多种连接方式
+#    - 配置 jarvis.device_providers 下的对应项
+#
+# ============================================================

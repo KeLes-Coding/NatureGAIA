@@ -1,0 +1,29 @@
+{
+    "Task": "Please use the Google App to search for the name of the designer of Jewel Changi Airport. Please use the Google App to search for the university from their educational background. Use the Google App to search for the country where this university is located. Search Wikipedia for the 2024 world land area ranking, and find out which country is ranked one position ahead of that country. Use Google to search for that country and tell me its capital city.",
+    "Task_ID": "0310",
+    "level": 3,
+    "atomic_tasks_number": 5,
+    "atomic_tasks_answer": [
+        {
+            "atomic_tasks_ID": 1,
+            "answer": "Moshe Safdie"
+        },
+        {
+            "atomic_tasks_ID": 2,
+            "answer": "McGill University"
+        },
+        {
+            "atomic_tasks_ID": 3,
+            "answer": "Canada"
+        },
+        {
+            "atomic_tasks_ID": 4,
+            "answer": "Russia"
+        },
+        {
+            "atomic_tasks_ID": 5,
+            "answer": "Moscow"
+        }
+    ],
+    "final_answer": "Moscow"
+}

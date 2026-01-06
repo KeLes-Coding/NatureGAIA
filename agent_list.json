@@ -1,0 +1,30 @@
+[
+    {
+      "agent_ID": 1,
+      "agent_name": "mobile_agent_e",
+      "operating_device": "android",
+      "application_list": [
+        "APPLE Music",
+        "Google Chrome"
+      ]
+    },
+    {
+      "agent_ID": 2,
+      "agent_name": "pc_agent_win",
+      "operating_device": "windows",
+      "application_list": [
+        "Google Chrome"
+      ]
+    },
+    {
+      "agent_ID": 3,
+      "agent_name": "jarvis_agent",
+      "operating_device": "android",
+      "application_list": [
+        "APPLE Music",
+        "Google Chrome",
+        "Wikipedia"
+      ]
+    }
+]
+  

@@ -1,0 +1,33 @@
+{
+    "Task": "使用wiki百科搜索周杰伦，告诉我他在2000年发布了哪张专辑？搜索这张这张专辑，告诉我这张专辑中包含了哪些曲目？使用APPLE Music搜索查看专辑的第一首歌的作词人是谁？在 网易云音乐APP 中搜索这位作词人，打开其主页，告诉我他是哪一年出生的？使用Google搜索这一年的4月4日是哪一家美国科技公司成立？使用 Google Map 搜索这家公司的中国总部位于那一个城市？",
+    "Task_ID": "0301",
+    "level": 3,
+    "atomic_tasks_number": 6,
+    "atomic_tasks_answer": [
+        {
+            "atomic_tasks_ID": 1,
+            "answer": "Jay"
+        },
+        {
+            "atomic_tasks_ID": 2,
+            "answer": "可爱女人、完美主义、星晴、娘子、斗牛、黑色幽默、伊斯坦堡、印地安老斑鸠、龙卷风、反方向的钟"
+        },
+        {
+            "atomic_tasks_ID": 3,
+            "answer": "徐若瑄"
+        },
+        {
+            "atomic_tasks_ID": 4,
+            "answer": "1975"
+        },
+        {
+            "atomic_tasks_ID": 5,
+            "answer": "微软"
+        },
+        {
+            "atomic_tasks_ID": 6,
+            "answer": "北京"
+        }
+    ],
+    "final_answer": "北京"
+}

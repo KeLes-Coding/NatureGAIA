@@ -1,0 +1,17 @@
+{
+    "Task": "Use Wikipedia to search for Jay Chou and see what album he released in 2000? Then tell me what tracks are included in this album?",
+    "Task_ID": "0101",
+    "level": 1,
+    "atomic_tasks_number": 2,
+    "atomic_tasks_answer": [
+        {
+            "atomic_tasks_ID": 1,
+            "answer": "Jay"
+        },
+        {
+            "atomic_tasks_ID": 2,
+            "answer": "Cute Woman, Perfectionism, Starry Mood, Lady, Bullfight, Black Humor, Istanbul, Old Indian Turtledove, Tornado, The Clock in the Opposite Direction"
+        }
+    ],
+    "final_answer": "Cute Woman, Perfectionism, Starry Mood, Lady, Bullfight, Black Humor, Istanbul, Old Indian Turtledove, Tornado, The Clock in the Opposite Direction"
+}

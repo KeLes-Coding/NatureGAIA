@@ -1,0 +1,42 @@
+{
+  "Task": "使用wiki百科搜索周杰伦，告诉我他在2000年发布了哪张专辑？搜索这张专辑，告诉我这张专辑中包含了哪些曲目？使用APPLE Music搜索查看专辑的第一首歌的作词人是谁？在网易云音乐APP中搜索这位作词人，打开其主页，告诉我他是哪一年出生的？使用Google搜索这一年的4月4日是哪一家美国科技公司成立？使用 Google Map 搜索这家公司的中国总部位于那一个城市？",
+  "atomic_tasks": [
+    {
+      "atomic_tasks_ID": 1,
+      "atomic_tasks_description": "使用Wiki百科搜索周杰伦，找到他2000年发布的专辑名称。",
+      "atomic_tasks_answer": "Jay",
+      "atomic_tasks_status": ""
+    },
+    {
+      "atomic_tasks_ID": 2,
+      "atomic_tasks_description": "根据步骤1的结果，即歌手为Jay，在Wiki百科上查找该专辑包含的所有曲目列表。",
+      "atomic_tasks_answer": "可爱女人、完美主义、星晴、娘子、斗牛、黑色幽默、伊斯坦堡、印地安老斑鸠、龙卷风、反方向的钟",
+      "atomic_tasks_status": ""
+    },
+    {
+      "atomic_tasks_ID": 3,
+      "atomic_tasks_description": "利用Apple Music搜索Jay的专辑《可爱女人、完美主义、星晴、娘子、斗牛、黑色幽默、伊斯坦堡、印地安老斑鸠、龙卷风、反方向的钟》，并确定第一首歌曲的作词人。",
+      "atomic_tasks_answer": "徐若瑄",
+      "atomic_tasks_status": ""
+    },
+    {
+      "atomic_tasks_ID": 4,
+      "atomic_tasks_description": "通过网易云音乐APP搜索作词人Jay，访问其个人主页并记录出生年份。考虑到Jay可能是指周杰伦，他在多首歌曲如可爱女人、完美主义、星晴、娘子、斗牛、黑色幽默、伊斯坦堡、印地安老斑鸠、龙卷风、反方向的钟中担任了作曲工作，但需注意这些歌曲中的部分歌词由徐若瑄创作，请确认是否为该艺术家，并记录相关信息。",
+      "atomic_tasks_answer": "1975",
+      "atomic_tasks_status": ""
+    },
+    {
+      "atomic_tasks_ID": 5,
+      "atomic_tasks_description": "使用Google搜索引擎查询1975年4月4日成立的、与Jay（周杰伦）相关的、可能涉及徐若瑄合作的美国科技公司名字。",
+      "atomic_tasks_answer": "微软",
+      "atomic_tasks_status": ""
+    },
+    {
+      "atomic_tasks_ID": 6,
+      "atomic_tasks_description": "借助Google Maps定位微软在中国的总部所在城市。请忽略之前回答中的无关内容，包括：Jay、可爱女人、完美主义、星晴、娘子、斗牛、黑色幽默、伊斯坦堡、印地安老斑鸠、龙卷风、反方向的钟以及徐若瑄，专注于查找微软公司在中国的总部所在城市。",
+      "atomic_tasks_answer": "北京",
+      "atomic_tasks_status": ""
+    }
+  ],
+  "final_answer": "北京"
+}
