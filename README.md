@@ -1,4 +1,6 @@
 # NaturalGAIA & LightManus
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 **NaturalGAIA: 面向长时序 GUI 任务的可验证基准**  
 **LightManus: 动态拓扑规划与分层协作 Agent 框架**
