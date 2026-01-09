@@ -1,3 +1,5 @@
+<div align="center">
+
 # NaturalGAIA & LightManus
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -5,12 +7,11 @@
 [![Paper](https://img.shields.io/badge/Paper-ACL%202026-red.svg)](#)
 [![Framework](https://img.shields.io/badge/Framework-分层协作代理-blueviolet.svg)]()
 
-<div align="center">
-
 ![LightManus](static/main_v1_2512125-1.png)
 
-**NaturalGAIA: 面向长时序 GUI 任务的可验证基准**
-**LightManus: 动态拓扑规划与分层协作 Agent 框架**
+> **NaturalGAIA: 面向长时序 GUI 任务的可验证基准**
+> 
+> **LightManus: 动态拓扑规划与分层协作 Agent 框架**
 
 [🚀 快速开始](#-快速开始) • [📚 项目结构](#-项目结构) • [📊 性能基准](#-性能基准) • [🌐 English Version](README.md)
 

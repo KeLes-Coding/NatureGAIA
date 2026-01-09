@@ -1,3 +1,5 @@
+<div align="center">
+
 # NaturalGAIA & LightManus
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -5,12 +7,11 @@
 [![Paper](https://img.shields.io/badge/Paper-ACL%202026-red.svg)](#)
 [![Framework](https://img.shields.io/badge/Framework-Hierarchical%20Agent-blueviolet.svg)]()
 
-<div align="center">
-
 ![LightManus](static/main_v1_2512125-1.png)
 
-**NaturalGAIA: A Verifiable Benchmark for Long-Horizon GUI Tasks**
-**LightManus: Dynamic Topological Planning & Hierarchical Collaborative Agent Framework**
+> **NaturalGAIA: A Verifiable Benchmark for Long-Horizon GUI Tasks**
+> 
+> **LightManus: Dynamic Topological Planning & Hierarchical Collaborative Agent Framework**
 
 [🚀 Quick Start](#-quick-start) • [📚 Documentation](#-project-structure) • [📊 Benchmarks](#-benchmarks) • [🌐 中文版](README_CN.md)
 
